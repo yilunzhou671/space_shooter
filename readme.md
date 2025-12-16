@@ -30,17 +30,17 @@ All movable objects inherit from Pygame `pygame.sprite.Sprite`, allowing us to m
 [pygame.sprite.Sprite]  <-- (Base classes provided by Pygame)
        │
        ├── Player (Player Class)
-       │     ├── 属性: image, rect, speed, cooldown
-       │     ├── 方法: update() [Use keyboard controls to move]
-       │     └── 方法: shoot()  [Generate Bullet Object]
+       │     ├── attribute: image, rect, speed, cooldown
+       │     ├── method: update() [Use keyboard controls to move]
+       │     └── method: shoot()  [Generate Bullet Object]
        │
        ├── Enemy (Enemy Class)
-       │     ├── 属性: image, rect, speed
-       │     └── 方法: update() [Automatic downward fall]
+       │     ├── attribute: image, rect, speed
+       │     └── method: update() [Automatic downward fall]
        │
        └── Bullet (Bullet Class )
-             ├── 属性: image, rect, speed
-             └── 方法: update() [Automatically Ascend]
+             ├── attribute: image, rect, speed
+             └── method: update() [Automatically Ascend]
 ```
 
 #### B. Portfolio/Management Relationship (HAS-A)
@@ -151,4 +151,5 @@ if __name__ == '__main__':
    - `sprites.py`Add a class to it `Item`.
    - The `game.py`game `_update`detects whether players have collected items.
    - Modify the methods `Player`of the class `shoot`.
+
    - **The structure remains unchanged.**
